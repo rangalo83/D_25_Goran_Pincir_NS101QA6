@@ -21,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,6 +45,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
   <component name="RunManager" selected="TestNG.CalculatorTest">
     <configuration name="CalculatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
@@ -51,11 +60,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.substractNegativeNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.devidePositiveNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="substractNegativeNegativeTest" />
+      <option name="METHOD_NAME" value="devidePositiveNegativeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -63,11 +72,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.subtractMaxnegativeMaxNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.divide" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractMaxnegativeMaxNegativeTest" />
+      <option name="METHOD_NAME" value="divide" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -75,11 +84,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.subtractMaxnegativeMaxpositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.divideNegativeNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractMaxnegativeMaxpositiveTest" />
+      <option name="METHOD_NAME" value="divideNegativeNegativeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -87,11 +96,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.subtractPositiveNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.multiplyWithOneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractPositiveNegative" />
+      <option name="METHOD_NAME" value="multiplyWithOneTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,10 +111,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CalculatorTest" />
-        <item itemvalue="TestNG.CalculatorTest.subtractMaxnegativeMaxpositiveTest" />
-        <item itemvalue="TestNG.CalculatorTest.subtractMaxnegativeMaxNegativeTest" />
-        <item itemvalue="TestNG.CalculatorTest.substractNegativeNegativeTest" />
-        <item itemvalue="TestNG.CalculatorTest.subtractPositiveNegative" />
+        <item itemvalue="TestNG.CalculatorTest.divideNegativeNegativeTest" />
+        <item itemvalue="TestNG.CalculatorTest.devidePositiveNegativeTest" />
+        <item itemvalue="TestNG.CalculatorTest.divide" />
+        <item itemvalue="TestNG.CalculatorTest.multiplyWithOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664478477643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;Add function testi push&quot;">
+      <created>1664479727885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664479727885</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

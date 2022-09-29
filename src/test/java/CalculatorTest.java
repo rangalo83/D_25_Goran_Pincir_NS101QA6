@@ -238,4 +238,122 @@ public class CalculatorTest {
          Assert.assertEquals(expectedResult, actualResult);
      }
 
+     @Test
+    public void multiply(){
+         String expectedResult = "4";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("2");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Multiply");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void multiplyWithZero(){
+         String expectedResult = "0";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("2");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("0");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Multiply");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void multiplyNegativePositive(){
+         String expectedResult = "-8";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("-4");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Multiply");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+     @Test
+    public void multiplyWithOneTest(){
+         String expectedResult = "2";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("2");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("1");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Multiply");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void divide(){
+         String expectedResult = "2";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("4");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Divide");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void dividePositiveNegativeTest(){
+         String expectedResult = "-2";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("4");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("-2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Divide");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void divideNegativeNegativeTest(){
+         String expectedResult = "2";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("-4");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("-2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Divide");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
 }
