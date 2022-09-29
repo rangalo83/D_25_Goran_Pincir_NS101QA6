@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f646a001-b207-474f-abc5-634a67c891ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
+    <list default="true" id="f646a001-b207-474f-abc5-634a67c891ab" name="Changes" comment="&quot;Add function testi push&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +51,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.addMaxNumber" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.substractNegativeNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="addMaxNumber" />
+      <option name="METHOD_NAME" value="substractNegativeNegativeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -68,11 +63,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.addNegativeNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.subtractMaxnegativeMaxNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="addNegativeNegativeTest" />
+      <option name="METHOD_NAME" value="subtractMaxnegativeMaxNegativeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -80,11 +75,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.addNegativePositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.subtractMaxnegativeMaxpositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="addNegativePositiveTest" />
+      <option name="METHOD_NAME" value="subtractMaxnegativeMaxpositiveTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -92,11 +87,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.addZeroPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.subtractPositiveNegative" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Z25" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
-      <option name="METHOD_NAME" value="addZeroPositiveTest" />
+      <option name="METHOD_NAME" value="subtractPositiveNegative" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,10 +102,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CalculatorTest" />
-        <item itemvalue="TestNG.CalculatorTest.addMaxNumber" />
-        <item itemvalue="TestNG.CalculatorTest.addZeroPositiveTest" />
-        <item itemvalue="TestNG.CalculatorTest.addNegativeNegativeTest" />
-        <item itemvalue="TestNG.CalculatorTest.addNegativePositiveTest" />
+        <item itemvalue="TestNG.CalculatorTest.subtractMaxnegativeMaxpositiveTest" />
+        <item itemvalue="TestNG.CalculatorTest.subtractMaxnegativeMaxNegativeTest" />
+        <item itemvalue="TestNG.CalculatorTest.substractNegativeNegativeTest" />
+        <item itemvalue="TestNG.CalculatorTest.subtractPositiveNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -123,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664474854371</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Add function testi push&quot;">
+      <created>1664478477643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664478477643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Add function testi push&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add function testi push&quot;" />
   </component>
 </project>

@@ -139,5 +139,103 @@ public class CalculatorTest {
         Assert.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void addMinNumber(){
+        String expectedResult = "-1999999998";
+        WebElement firstNumber = driver.findElement(By.id("number1Field"));
+        firstNumber.sendKeys("-999999999");
+        WebElement secondNumber = driver.findElement(By.id("number2Field"));
+        secondNumber.sendKeys("-999999999");
+        WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+        Select select = new Select(operation);
+        select.selectByVisibleText("Add");
+        WebElement calculate = driver.findElement(By.id("calculateButton"));
+        calculate.click();
+        WebElement answer = driver.findElement(By.id("numberAnswerField"));
+        String actualResult = answer.getAttribute("value");
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void subtract(){
+        String expectedResult = "2";
+        WebElement firstNumber = driver.findElement(By.id("number1Field"));
+        firstNumber.sendKeys("4");
+        WebElement secondNumber = driver.findElement(By.id("number2Field"));
+        secondNumber.sendKeys("2");
+        WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+        Select select = new Select(operation);
+        select.selectByVisibleText("Subtract");
+        WebElement calculate = driver.findElement(By.id("calculateButton"));
+        calculate.click();
+        WebElement answer = driver.findElement(By.id("numberAnswerField"));
+        String actualResult = answer.getAttribute("value");
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void subtractPositiveNegative(){
+        String expectedResult = "6";
+        WebElement firstNumber = driver.findElement(By.id("number1Field"));
+        firstNumber.sendKeys("4");
+        WebElement secondNumber = driver.findElement(By.id("number2Field"));
+        secondNumber.sendKeys("-2");
+        WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+        Select select = new Select(operation);
+        select.selectByVisibleText("Subtract");
+        WebElement calculate = driver.findElement(By.id("calculateButton"));
+        calculate.click();
+        WebElement answer = driver.findElement(By.id("numberAnswerField"));
+        String actualResult = answer.getAttribute("value");
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+     @Test
+    public void substractNegativeNegativeTest(){
+         String expectedResult = "0";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("-2");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("-2");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Subtract");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+     @Test
+    public void subtractMaxnegativeMaxNegativeTest(){
+         String expectedResult = "0";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("-999999999");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("-999999999");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Subtract");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
+
+     @Test
+    public void subtractMaxnegativeMaxpositiveTest(){
+         String expectedResult = "-10999999998";
+         WebElement firstNumber = driver.findElement(By.id("number1Field"));
+         firstNumber.sendKeys("-999999999");
+         WebElement secondNumber = driver.findElement(By.id("number2Field"));
+         secondNumber.sendKeys("9999999999");
+         WebElement operation = driver.findElement(By.id("selectOperationDropdown"));
+         Select select = new Select(operation);
+         select.selectByVisibleText("Subtract");
+         WebElement calculate = driver.findElement(By.id("calculateButton"));
+         calculate.click();
+         WebElement answer = driver.findElement(By.id("numberAnswerField"));
+         String actualResult = answer.getAttribute("value");
+         Assert.assertEquals(expectedResult, actualResult);
+     }
 
 }
